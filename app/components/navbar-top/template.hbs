@@ -7,12 +7,19 @@
             {{fa-icon "home" size="lg"}}
           {{/link-to}}
         </li>
-        <li><a href="#">Overview</a></li>
+        <li>
+          {{#link-to 'overview'}}Overview{{/link-to}}
+        </li>
         <li class="has-dropdown">
-          <a href="#">Countries</a>
+          {{#link-to 'countries'}}Countries{{/link-to}}
           <ul class="dropdown">
-            <li><a href="#">First Country</a></li>
-            <li><a href="#">Second Country</a></li>
+            {{#each country as |country|}}
+              <li>
+                {{#link-to 'countries.country' country}}
+                  {{country.name}}
+                {{/link-to}}
+              </li>
+            {{/each}}
           </ul>
         </li>
       </ul>
