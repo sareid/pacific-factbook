@@ -1,0 +1,10 @@
+$background-color: #f7fdf3;
+$header-color: #225131;
+$primary-color: #81c7cf;
+$secondary-color: #c3af00;
+
+$topbar-bg-color: rgba($header-color, 0.8);
+$topbar-link-bg: transparent;
+$topbar-link-bg-hover: $topbar-bg-color;
+$topbar-dropdown-link-bg: $secondary-color;
+$topbar-dropdown-link-bg-hover: darken($secondary-color, 10%);

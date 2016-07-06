@@ -1,6 +1,22 @@
 <div class="contain-to-grid sticky header">
   <nav class="top-bar" data-topbar role="navigation" data-options="sticky_on: large">
-    {{fa-icon "home"}}
+    <section class="top-bar-section">
+      <ul>
+        <li>
+          {{#link-to 'index'}}
+            {{fa-icon "home" size="lg"}}
+          {{/link-to}}
+        </li>
+        <li><a href="#">Overview</a></li>
+        <li class="has-dropdown">
+          <a href="#">Countries</a>
+          <ul class="dropdown">
+            <li><a href="#">First Country</a></li>
+            <li><a href="#">Second Country</a></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
   </nav>
 </div>
 {{yield}}
