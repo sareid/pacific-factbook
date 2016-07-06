@@ -35,7 +35,7 @@ h3 {
 
 p {
   font-family: 'Gentium Book Basic', serif;
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 
 .hero {
@@ -127,11 +127,12 @@ nav.top-bar {
   }
 }
 
-.img-circle {
-  clip-path: circle(60px at center);
-}
-
 .country-name {
   background-color: $primary-color;
   color: $background-color;
+}
+
+.country-container {
+  background-color: white;
+  height: 30vh;
 }
