@@ -125,6 +125,11 @@ h5 {
 
 .main {
   background-color: $background-color;
+  &.country{
+    p {
+      font-size: 1em;
+    }
+  }
 }
 
 // .header {
@@ -213,4 +218,15 @@ nav.top-bar {
   height: 150px;
   background-size: cover;
   background-position: center;
+}
+
+.flag-showpage-container {
+  height: 250px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.g-map-canvas {
+  width: 100%;
+  height: 60vh;
 }
