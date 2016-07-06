@@ -1,0 +1,19 @@
+<section class="main">
+  <br>
+  <div class="row">
+    {{#each model as |country|}}
+      <div class="small-12 medium-6 large-4 columns">
+        {{#link-to 'countries.country' country}}
+        <div class="country-container">
+          <div class="flag-container" style="background-image:url(../images/flags/{{country.flag_url}})">
+          </div>
+          <div class="country-name">
+            <h4>{{country.full_name}}</h4>
+          </div>
+        </div>
+        {{/link-to}}
+      </div>
+    {{/each}}
+  </div>
+</section>
+{{yield}}

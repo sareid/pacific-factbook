@@ -33,10 +33,35 @@ h3 {
   text-align: center;
 }
 
+h4 {
+  font-family: 'Oswald', sans-serif;
+  }
+
 p {
-  font-family: 'Gentium Book Basic', serif;
+
   font-size: 1.4em;
 }
+
+h5 {
+    font-family: 'Gentium Book Basic', serif;
+    color: white;
+    font-size: 1.5em;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    &.quoted {
+      text-transform: uppercase;
+      font-family: 'Oswald', sans-serif;
+      font-style: normal;
+      text-align: right;
+    }
+}
+
+
+.quote {
+    padding-top: 1.8em;
+    background-color: rgba($secondary-color, 0.6);
+  }
 
 .hero {
   height: 80vh;
@@ -47,6 +72,30 @@ p {
     padding: 2em 0 2em 0;
     background-color: rgba($secondary-color, 0.6);
   }
+  &.source {
+    height: 60vh;
+    h1 {
+      font-size: 3em;
+    }
+  }
+  &.heading {
+    height: 30vh;
+    h1 {
+      font-size: 3em;
+    }
+  }
+  .front-buttons {
+    margin-top: 2em;
+  }
+}
+
+.button {
+  background-color: $header-color;
+}
+
+.button:hover,
+.button:focus {
+  background-color: darken($header-color, 5%);
 }
 
 .inner-border {
@@ -97,7 +146,7 @@ nav.top-bar {
 }
 
 .footer {
-  background-color: $header-color;
+  background-color: rgba($header-color, 0.9);
   text-align: center;
   font-size: 1.6rem;
   padding: 2rem;
@@ -128,11 +177,32 @@ nav.top-bar {
 }
 
 .country-name {
-  background-color: $primary-color;
-  color: $background-color;
+  // background-color: $primary-color;
+  margin: 1.5em;
+  margin-top: 0.7em;
+  height: 85px;
 }
 
 .country-container {
   background-color: white;
-  height: 30vh;
+  height: 235px;
+  margin-bottom: 1.5em;
+  text-transform: uppercase;
+  box-shadow: 1px 1px 1px rgba(#b8b8b8, 0.3);
+    h4 {
+      margin-top: 0em;
+      color: $dark-grey;
+    }
+    &:hover {
+      background-color: rgba($secondary-color, 0.6);
+      h4 {
+        color: $white;
+      }
+    }
+}
+
+.flag-container {
+  height: 150px;
+  background-size: cover;
+  background-position: center;
 }
