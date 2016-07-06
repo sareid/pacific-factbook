@@ -3,6 +3,10 @@
 @import "foundation";
 
 body {
+  background-image: url(../images/suva-fiji.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   background-color: $background-color;
   font-family: 'Open Sans', sans-serif;
 }
@@ -11,20 +15,104 @@ h1 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 800;
   color: white;
-  font-size: 30px;
+  font-size: 4em;
+  .title-strong {
+    line-height: 0.7em;
+    font-size: 2em;
+  }
+  .kern {
+    font-size: 0.8em;
+    font-family: 'Gentium Book Basic', serif;
+    font-weight: 400;
+    font-style: italic;
+  }
 }
+
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+h4 {
+  font-family: 'Oswald', sans-serif;
+  }
 
 p {
-  font-size: 13px;
+
+  font-size: 1.4em;
 }
 
+h5 {
+    font-family: 'Gentium Book Basic', serif;
+    color: white;
+    font-size: 1.5em;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    &.quoted {
+      text-transform: uppercase;
+      font-family: 'Oswald', sans-serif;
+      font-style: normal;
+      text-align: right;
+    }
+}
+
+
+.quote {
+    padding-top: 1.8em;
+    background-color: rgba($secondary-color, 0.6);
+  }
+
 .hero {
-  background-image: url(../images/suva-fiji.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
   height: 80vh;
   text-align: center;
+  .title-container {
+    margin: 0 auto;
+    width: 50%;
+    padding: 2em 0 2em 0;
+    background-color: rgba($secondary-color, 0.6);
+  }
+  &.source {
+    height: 60vh;
+    h1 {
+      font-size: 3em;
+    }
+  }
+  &.heading {
+    height: 30vh;
+    h1 {
+      font-size: 3em;
+    }
+  }
+  .front-buttons {
+    margin-top: 2em;
+  }
+}
+
+.button {
+  background-color: $header-color;
+}
+
+.button:hover,
+.button:focus {
+  background-color: darken($header-color, 5%);
+}
+
+.inner-border {
+    background: #000;
+    color: #fff;
+    margin: 50px;
+    padding: 10px;
+    position: relative;
+}
+.inner-border:before {
+    border: 5px solid rgba($secondary-color, 0.6);
+    content: "";
+    position: absolute;
+    top: -10px;
+    bottom: -10px;
+    left: -10px;
+    right: -10px;
 }
 
 .main {
@@ -58,11 +146,12 @@ nav.top-bar {
 }
 
 .footer {
-  background-color: $header-color;
+  background-color: rgba($header-color, 0.9);
   text-align: center;
   font-size: 1.6rem;
   padding: 2rem;
   p {
+    font-family: 'Open Sans', sans-serif;
     font-size: 1.2em;
     &.slogan {
       color: $background-color;
@@ -85,4 +174,35 @@ nav.top-bar {
       padding: 0 0.4rem 0 0.8rem;
     }
   }
+}
+
+.country-name {
+  // background-color: $primary-color;
+  margin: 1.5em;
+  margin-top: 0.7em;
+  height: 85px;
+}
+
+.country-container {
+  background-color: white;
+  height: 235px;
+  margin-bottom: 1.5em;
+  text-transform: uppercase;
+  box-shadow: 1px 1px 1px rgba(#b8b8b8, 0.3);
+    h4 {
+      margin-top: 0em;
+      color: $dark-grey;
+    }
+    &:hover {
+      background-color: rgba($secondary-color, 0.6);
+      h4 {
+        color: $white;
+      }
+    }
+}
+
+.flag-container {
+  height: 150px;
+  background-size: cover;
+  background-position: center;
 }
