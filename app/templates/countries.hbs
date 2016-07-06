@@ -1,0 +1,24 @@
+{{navbar-top country=model}}
+<section class="main">
+  <div class="row">
+    <div class="small-12">
+      <h3>Countries of the Pacific</h3>
+      <p>There are eleven small, independent island countries in the south Pacific.</p>
+    </div>
+  </div>
+  <div class="row">
+    {{#each model as |country|}}
+      <div class="small-12 medium-6 large-4 columns country-container">
+        <div class="country-name">
+          {{country.name}}
+        </div>
+        <div class="center-cropped">
+          <img src="images/flags/{{country.flag_url}}">
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</section>
+
+{{outlet}}
+{{sticky-footer}}
