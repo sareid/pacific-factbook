@@ -49,7 +49,7 @@ module.exports = function(environment) {
 
   if (environment === 'production') {
     ENV.APP.LOG_TRANSITIONS = true;
-    ENV.APP.API_HOST = 'http://psid-stats-api.herokuapp.com';
+    ENV.APP.API_HOST = 'https://psid-stats-api.herokuapp.com';
 
   }
 
