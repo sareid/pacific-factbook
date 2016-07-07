@@ -3,15 +3,23 @@
 @import "foundation";
 
 body {
-  background-image: url(../images/suva-fiji.jpg);
+  background-image: url(../images/suva-fiji-sm.jpg);
+  @media #{$medium-only} {
+    background-image: url(../images/suva-fiji-md.jpg);
+  }
+  @media #{$large-up} {
+    background-image: url(../images/suva-fiji-lg.jpg);
+  }
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-color: $background-color;
-  font-family: 'Open Sans', sans-serif;
+  // font-family: 'Oswald', sans-serif;
+  font-family: 'Slabo 13px', serif;
 }
 
 h1 {
+  font-size: 4em;
   font-family: 'Open Sans', sans-serif;
   font-weight: 800;
   color: white;
@@ -26,10 +34,17 @@ h1 {
     font-weight: 400;
     font-style: italic;
   }
+  @media #{$medium-only} {
+  font-size: 2.5em;
+  }
+  @media #{$small-only} {
+  font-size: 1.5em;
+  }
 }
 
 h2 {
   text-align: center;
+  margin-bottom: 1.2em;
 }
 
 h3 {
@@ -38,7 +53,9 @@ h3 {
 }
 
 h4 {
-  font-family: 'Oswald', sans-serif;
+  // font-family: 'Oswald', sans-serif;
+  font-size: 1.3em;
+  font-family: 'Slabo 13px', serif;
   }
 
 p {
@@ -47,16 +64,18 @@ p {
 }
 
 h5 {
-    font-family: 'Gentium Book Basic', serif;
+    // font-family: 'Oswald', sans-serif;
+    font-family: 'Slabo 13px', serif;
     color: white;
-    font-size: 1.5em;
+    font-size: 1.6em;
     font-weight: 400;
-    font-style: italic;
     text-align: center;
     &.quoted {
-      text-transform: uppercase;
-      font-family: 'Oswald', sans-serif;
-      font-style: normal;
+      // // text-transform: uppercase;
+      // font-weight: 800;
+      font-size: 1.2em;
+      // // font-family: 'Oswald', sans-serif;
+      // font-style: normal;
       text-align: right;
     }
 }
@@ -72,7 +91,7 @@ table {
   }
 
 .hero {
-  height: 80vh;
+  height: 100vh;
   text-align: center;
   .title-container {
     margin: 0 auto;
@@ -83,21 +102,42 @@ table {
       margin: 0 2em 0 2em;
       font-size: 0.9em;
     }
+    @media #{$medium-only} {
+        width: 75%;
+      }
+    @media #{$small-only} {
+        width: 90%;
+      }
   }
   &.source {
     height: 50vh;
+    @media #{$small-only} {
+        height: 60vh;
+      }
     h1 {
       font-size: 3em;
+      @media #{$medium-only} {
+        font-size: 2.3em;
+      }
+      @media #{$small-only} {
+        font-size: 1.9em;
+      }
     }
   }
   &.heading {
     height: 30vh;
     h1 {
-      font-size: 3em;
+      font-size: 2.7em;
+      @media #{$medium-only} {
+      font-size: 2.3em;
+      }
+      @media #{$small-only} {
+      font-size: 1.9em;
+      }
     }
   }
   .front-buttons {
-    margin-top: 2em;
+    margin-top: 4em;
   }
 }
 
@@ -159,16 +199,17 @@ nav.top-bar {
 }
 
 .top-bar-section ul li {
-    background: transparent;
+  background: transparent;
 }
 
 .footer {
   background-color: rgba($header-color, 0.9);
   text-align: center;
   font-size: 1.6rem;
-  padding: 2rem;
+  padding: 1rem;
   p {
-    font-family: 'Open Sans', sans-serif;
+    // font-family: 'Open Sans', sans-serif;
+    font-family: 'Slabo 13px', serif;
     font-size: 1.2em;
     &.slogan {
       color: $background-color;
@@ -225,7 +266,7 @@ nav.top-bar {
 }
 
 .flag-showpage-container {
-  height: 250px;
+  height: 200px;
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -237,4 +278,10 @@ nav.top-bar {
 
 table {
   margin: 0 auto;
+}
+
+.table-header {
+  a {
+    color: white;
+  }
 }

@@ -4,7 +4,13 @@ $primary-color: #16b3c5;
 $secondary-color: #c3af00;
 $dark-grey: #4c4c4c;
 
+$button-font-family: 'Slabo 13px', serif;
 
+$table-bg: $background-color;
+$table-even-row-bg: rgba($header-color, 0.2);
+$table-border-size: 0px;
+$table-head-bg: $header-color;
+$table-head-font-color: white;
 
 $topbar-bg-color: rgba($header-color, 0.8);
 $topbar-link-bg: transparent;
@@ -12,3 +18,4 @@ $topbar-link-bg-hover: $topbar-bg-color;
 $topbar-dropdown-link-bg: $secondary-color;
 $topbar-dropdown-link-bg-hover: darken($secondary-color, 10%);
 $topbar-link-font-size: 1em;
+$topbar-link-font-family: 'Slabo 13px', serif;
