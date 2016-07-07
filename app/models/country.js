@@ -12,5 +12,7 @@ export default Model.extend({
   flag_url: attr('string'),
   independence: attr('date'),
   gdp_per_capita: attr('number'),
-  languages: attr('string')
+  languages: attr('string'),
+  latitude: attr(),
+  longitude: attr()
 });

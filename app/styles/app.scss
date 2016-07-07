@@ -28,6 +28,10 @@ h1 {
   }
 }
 
+h2 {
+  text-align: center;
+}
+
 h3 {
   font-family: 'Open Sans', sans-serif;
   text-align: center;
@@ -57,6 +61,10 @@ h5 {
     }
 }
 
+table {
+  padding-bottom: 0em;
+  margin-bottom: 0em;
+}
 
 .quote {
     padding-top: 1.8em;
@@ -71,9 +79,13 @@ h5 {
     width: 50%;
     padding: 2em 0 2em 0;
     background-color: rgba($secondary-color, 0.6);
+    p {
+      margin: 0 2em 0 2em;
+      font-size: 0.9em;
+    }
   }
   &.source {
-    height: 60vh;
+    height: 50vh;
     h1 {
       font-size: 3em;
     }
@@ -117,6 +129,11 @@ h5 {
 
 .main {
   background-color: $background-color;
+  &.country{
+    p {
+      font-size: 1em;
+    }
+  }
 }
 
 // .header {
@@ -205,4 +222,19 @@ nav.top-bar {
   height: 150px;
   background-size: cover;
   background-position: center;
+}
+
+.flag-showpage-container {
+  height: 250px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.g-map-canvas {
+  width: 100%;
+  height: 60vh;
+}
+
+table {
+  margin: 0 auto;
 }

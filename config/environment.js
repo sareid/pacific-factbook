@@ -17,7 +17,13 @@ module.exports = function(environment) {
       // Here you can pass flags/options to your application instance
       // when it is created
       API_HOST: 'http://localhost:3000'
-    }
+    },
+
+  };
+
+  ENV['g-map'] = {
+    key: 'AIzaSyBz-M5Cv9gjF7Jev9749JRA5-HquQjaCRY',
+    protocol: 'https'
   };
 
   if (environment === 'development') {
