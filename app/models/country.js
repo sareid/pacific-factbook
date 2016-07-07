@@ -14,5 +14,6 @@ export default Model.extend({
   gdp_per_capita: attr('number'),
   languages: attr('string'),
   latitude: attr(),
-  longitude: attr()
+  longitude: attr(),
+  description: attr()
 });
