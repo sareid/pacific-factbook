@@ -306,8 +306,8 @@ table {
 .spinner {
   width: 40px;
   height: 40px;
-  margin: 100px auto;
-  background-color: #333;
+  margin: 20px auto;
+  background-color: #fff;
 
   border-radius: 100%;
   -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
@@ -334,10 +334,18 @@ table {
 }
 
 .loading-text {
-  margin: 1em;
+  padding: 2em;
+  margin: 10vh auto;
+  width: 50%;
+  @media #{$small-only} {
+    width: 70%
+  }
   background-color: rgba($secondary-color, 0.6);
   p {
     font-size: 1em;
     color: white;
+  }
+  h1 {
+    font-size: 2.1em;
   }
 }
