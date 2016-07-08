@@ -301,11 +301,6 @@ table {
   background-position: center;
   background-attachment: fixed;
   background-color: $background-color;
-
-  p {
-    font-size: 1.5em;
-    font-color: white;
-  }
 }
 
 .spinner {
@@ -340,4 +335,8 @@ table {
 
 .loading-text {
   background-color: rgba($secondary-color, 0.6);
+  p {
+    font-size: 1.1em;
+    font-color: white;
+  }
 }
