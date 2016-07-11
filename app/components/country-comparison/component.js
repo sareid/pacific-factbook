@@ -10,7 +10,9 @@ export default Ember.Component.extend({
       var countryRow = {
         Country: country.get('name'),
         Population: country.get('population'),
-        'GDP_per_Capita_USD(PPP)': country.get('gdp_per_capita')
+        'GDP_per_Capita_USD(PPP)': country.get('gdp_per_capita'),
+        Human_Development_Index: country.get('human_development_index') ? country.get('human_development_index') : "N/A",
+        Life_Expectancy: country.get('life_expectancy')
       };
       tableRows.push(countryRow);
     });

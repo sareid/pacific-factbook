@@ -15,5 +15,7 @@ export default Model.extend({
   languages: attr('string'),
   latitude: attr(),
   longitude: attr(),
-  description: attr()
+  description: attr(),
+  human_development_index: attr(),
+  life_expectancy: attr()
 });

@@ -11,7 +11,7 @@ module.exports = function(defaults) {
     'foundationJs': 'all'
   }
   });
-
+  app.import('vendor/responsive-tables.js');
   // Use `app.import` to add additional libraries to the generated
   // output files.
   //
