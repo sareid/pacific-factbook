@@ -1,5 +1,8 @@
 import Ember from 'ember';
 
+var {set} = Ember;
+debugger;
+
 export default Ember.Component.extend({
 
   myTableModel: Ember.computed('model.@each.state', function(){
